@@ -1,0 +1,11 @@
+<h2>Hello Donut!</h2>
+
+  <p>Flavor: <%= @donut.flavor %></p>
+  <p>Price: <%= @donut.price %></p>
+
+  
+  <form action="/donuts/<%= @donut.id %>/delete" method="post">
+  <input id="hidden" type="hidden" name="_method" value="delete">
+  <input type="submit" value="delete">
+</form>
+

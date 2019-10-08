@@ -1,0 +1,8 @@
+<h2>Edit the <%= @donut.flavor %> Donut</h2>
+
+<form action="/donuts/<%= @donut.id %>" method="post">
+<input id="hidden" type="hidden" name="_method" value="patch">
+  <label>Flavor: </label><input type="text" name="flavor">
+  <label>Price: </label><input type="number" name="price">
+  <input type="submit">
+</form>
